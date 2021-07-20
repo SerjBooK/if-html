@@ -29,41 +29,67 @@
     margin: 0;
     box-sizing: border-box;
 }
-.offer__wrapper {
-    padding: 120px 104px;
-}
-
-.offer__wrapper h1 {
-    text-align: center;
-    font-size: 40px;
-}
-
-.line {
-    width: 100px;
-    height: 4px;
-    background-color: #F5BD41;
-    margin: 20px auto 0;
-}
-
-.offers {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin-top: 80px;
+footer {
+    font-family: 'Roboto', normal;
+    width: 1440px;
+    background-color: #10367C;
     
 }
-
-.offer__icon {
+.container-footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
+    width: 1440px;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around;
 }
-
-.offer p {
-    text-align: center;
-    font-size: 24px;
-    margin-top: 50px;
+.container-about {
+    display: flex;
+    flex-direction: column;
+    width: 193px;
+    height: 211px;
+    list-style-type: none;
+}
+.container-property {
+    display: flex;
+    flex-direction: column;
+    width: 133px;
+    height: 310px;
+    list-style-type: none;
+}
+.container-support {
+    display: flex;
+    flex-direction: column;
+    width: 233px;
+    height: 122px;
+    list-style-type: none;
+}
+.container-header {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 23px;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.container-text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 23px;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.Triphouse-lnc {
+    margin: 163px 0px 0px 145px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    
 }
