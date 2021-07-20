@@ -29,46 +29,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* 
-.offer__wrapper {
-    padding: 120px 104px;
-}
-
-.offer__wrapper h1 {
-    text-align: center;
-    font-size: 40px;
-}
-
-.line {
-    width: 100px;
-    height: 4px;
-    background-color: #F5BD41;
-    margin: 20px auto 0;
-}
-
-.offers {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin-top: 80px;
-    
-}
-
-.offer__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
-}
-
-.offer p {
-    text-align: center;
-    font-size: 24px;
-    margin-top: 50px;
-}
-*/
 footer {
     font-family: 'Roboto', normal;
     width: 1440px;
