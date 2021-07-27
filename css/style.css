@@ -23,73 +23,197 @@
          url('../fonts/roboto-v27-latin-500.woff') format('woff'), /* Modern Browsers */
          url('../fonts/roboto-v27-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/roboto-v27-latin-500.svg') format('svg'); /* Legacy iOS */
-  }
+  } 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-footer {
-    font-family: 'Roboto', normal;
-    width: 1440px;
-    background-color: #10367C;
-    
-}
-.container-footer {
-    display: flex;
-    width: 1440px;
+
+ul {
     list-style-type: none;
-    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    padding-right: 104px;
+    padding-left: 104px;
+    min-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100vh;
+    background: url(/img/background.svg);
+    background-size: cover;
+}
+
+.header__top {
+    padding-top: 51px;
+    justify-content: space-between;
+}
+
+.header__top-inner { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 205px; 
+    height: 40px;
+    background-image: url('/icon/css_sprites\ \(3\).png');
+    background-position: -10px -10px;
+}
+
+.nav__list {
+    margin-left: 686px;
+    display:flex;
     justify-content: space-around;
+    align-items: center;  
 }
-.container-about {
+
+.active__link {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 24px;
+    margin-right: 24px;
+    display: block;
+    color: white; 
+    border-bottom: 2px solid #F5BD41;
+}
+
+.nav__list-item:nth-child(2n) {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 24px;
+    margin-right: 48px;
+}
+
+.nav__list-item:nth-child(3n) {
+    width: 30px; 
+    height: 30px;
+    background-image: url('/icon/css_sprites\ \(3\).png'); 
+    background-position:  -235px -122px;
+}
+
+.nav__list-item:nth-child(4n) {
+    margin-left: 24px;
+    width: 40px; 
+    height: 40px;
+    background: url('/icon/css_sprites\ \(3\).png'); 
+    background-position:  -150px -262px;
+}
+/* изменить accountCircle */
+/* .menu__list-item:nth-child(4n):hover {
+    background-image: url(./css_sprites.png);
+    background-position: ;
+} */
+
+.menu__link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background:#F5BD41;
+    transition: width .3s;
+}
+
+.menu__link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+h1 {
+    font-family: 'Roboto';
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 59px;
+    color: white;
+    margin-top: 202px;
+}
+span {
+    display: block;
+}
+
+.header__content form {
     display: flex;
-    flex-direction: column;
-    width: 193px;
-    height: 211px;
-    list-style-type: none;
+    margin-top: 100px;
 }
-.container-property {
-    display: flex;
-    flex-direction: column;
-    width: 133px;
-    height: 310px;
-    list-style-type: none;
+
+.header__content form input {
+    width: 100%;
+    height: 64px;
+    border-radius: 8px;
+    margin-top: 24px;
 }
-.container-support {
-    display: flex;
-    flex-direction: column;
-    width: 233px;
-    height: 122px;
-    list-style-type: none;
+
+.header__content p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
 }
-.container-header {
+
+input::placeholder {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 24px;
+}
+
+.header__input--search {
+    padding: 8px 8px;
+    flex-grow: 3.3;
+}
+
+.header__input--check {
+    flex-grow: 1.8;
+    padding: 8px;
+    margin-left: -17px;
+}
+
+.header__input--persons {
+    flex-grow: 2.6;
+    padding: 30px;
+    margin-left: -40px;
+}
+
+.header__btn {
+    flex-grow: 0.2;
+    width: 192px;
+    height: 64px;
+    background: #3077C6;
+    border-radius: 8px;
     font-family: 'Roboto';
     font-weight: 500;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 23px;
-    align-items: center;
+    font-size: 24px;
     color: #FFFFFF;
-    margin-bottom: 24px;
+    margin-top: 55px;
+    margin-left: -30px;   
 }
-.container-text {
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 23px;
-    align-items: center;
-    color: #FFFFFF;
-    margin-bottom: 24px;
+
+input:focus {
+    border-color: #F5BD41;
+    border-width: 3px;
 }
-.Triphouse-lnc {
-    margin: 163px 0px 0px 145px;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
-    
+
+input {
+    border-color:transparent;
+    outline: none;
 }
+
+.markets {
+    margin: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.android {
+    margin-right: 17px;
+}
+
